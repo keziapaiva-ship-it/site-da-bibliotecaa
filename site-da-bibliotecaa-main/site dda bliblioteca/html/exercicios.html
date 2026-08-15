@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BiblioMais -</title>
+
+  <!-- Fonte Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/site dda bliblioteca/html/inicio.html">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+  <!-- HEADER AZUL COM BOTOES ENTRAR E CADASTRAR -->
+  <header class="hero-header">
+    <nav class="navbar">
+      <div class="brand">
+        <div class="brand-icon">
+          <i data-lucide="book-open" size="24"></i>
+        </div>
+        <div class="brand-text">
+          <h1>BiblioMais</h1>
+          <span>Biblioteca de Empréstimo</span>
+        </div>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="/site dda bliblioteca/html/inicio.html">Início</a></li>
+        <li><a href="/site dda bliblioteca/html/catalogo.html">Catálogo</a></li>
+        <li><a href="/site dda bliblioteca/html/emprestimos.html">Empréstimos</a></li>
+        <li><a href="/site dda bliblioteca/html/exercicios.html" class="active">Extoque</a></li>
+        <li><a href="/site dda bliblioteca/html/sobre.html">Sobre</a></li>
+        <li><a href="/site dda bliblioteca/html/contato.html">Contato</a></li>
+      </ul>
+
+      <!-- Botões de Login e Cadastro -->
+      <div class="auth-buttons">
+        <button class="btn-login"><i data-lucide="user" size="16"></i> Entrar</button>
+        <button class="btn-register"><i data-lucide="user-plus" size="16"></i> Cadastrar</button>
+      </div>
+    </nav>
+
+    <div class="hero-body">
+      <div class="hero-title-area">
+        <h2>Extoque– Tema: Biblioteca</h2>
+        <p>Uma biblioteca deseja controlar o empréstimo de livros.<br>Confira abaixo os dados, categorias e resultados
+          do programa.</p>
+      </div>
+      <div class="hero-icon-card">
+        <i data-lucide="clipboard-check" size="48" color="white"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL (EXATAMENTE A FOTO) -->
+  <main class="main-container">
+    <div class="breadcrumb">exercicio > - Biblioteca</div>
+
+    <div class="content-card">
+      <div class="card-header-title">
+        <i data-lucide="clipboard-list" size="20"></i> Dados
+      </div>
+      <p class="card-description">Uma biblioteca deseja controlar o empréstimo de livros.</p>
+
+      <h4 class="section-subtitle">Categorias</h4>
+
+      <!-- Categorias -->
+      <div class="categories-grid">
+        <div class="category-box">
+          <i data-lucide="heart" size="24"></i>
+          <h4>Romance</h4>
+          <span>120 livros</span>
+        </div>
+        <div class="category-box">
+          <i data-lucide="laptop" size="24"></i>
+          <h4>Tecnologia</h4>
+          <span>80 livros</span>
+        </div>
+        <div class="category-box">
+          <i data-lucide="graduation-cap" size="24"></i>
+          <h4>História</h4>
+          <span>60 livros</span>
+        </div>
+        <div class="category-box">
+          <i data-lucide="ghost" size="24"></i>
+          <h4>Terror</h4>
+          <span>40 livros</span>
+        </div>
+      </div>
+
+      <!-- Item 1 -->
+      <div class="step-item">
+        <div class="step-header">
+          <div class="step-title">
+            <span class="step-number">1</span> Quantidade emprestada
+          </div>
+          <span class="badge-status">Implementado</span>
+        </div>
+        <p class="step-desc">Quantidade de livros informada para empréstimo.</p>
+        <div class="result-box">
+          Quantidade solicitada: <strong>15 livros</strong>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="step-item">
+        <div class="step-header">
+          <div class="step-title">
+            <span class="step-number">2</span> Validação do estoque
+          </div>
+          <span class="badge-status">Implementado</span>
+        </div>
+        <p class="step-desc">Verificação se a quantidade solicitada está disponível.</p>
+        <div class="result-box success">
+          <i data-lucide="check-circle" size="18"></i>
+          <span><strong>Estoque suficiente!</strong> Quantidade disponível no estoque: 254 livros</span>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="step-item">
+        <div class="step-header">
+          <div class="step-title">
+            <span class="step-number">3</span> Livros restantes após o empréstimo
+          </div>
+          <span class="badge-status">Implementado</span>
+        </div>
+        <p class="step-desc">Quantidade de livros que restaram no estoque após o empréstimo.</p>
+        <div class="result-box">
+          Livros restantes: <strong>239 livros</strong>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="step-item">
+        <div class="step-header">
+          <div class="step-title">
+            <span class="step-number">4</span> Categoria com maior procura
+          </div>
+          <span class="badge-status">Implementado</span>
+        </div>
+        <p class="step-desc">Categoria que possui maior número de empréstimos.</p>
+        <div class="result-box">
+          Categoria com maior procura: <strong>Romance</strong> (87 empréstimos)
+        </div>
+      </div>
+
+      <!-- Grid Lado a Lado (5 e 6) -->
+      <div class="grid-2-col">
+        <!-- Item 5 -->
+        <div class="step-item">
+          <div class="step-header">
+            <div class="step-title">
+              <span class="step-number">5</span> Faturamento
+            </div>
+            <span class="badge-status">Implementado</span>
+          </div>
+          <p class="step-desc">Valor total gerado com as multas dos empréstimos.</p>
+          <div class="result-box">
+            Faturamento total com multas: <br><strong style="font-size: 16px; color: var(--blue-primary);">R$
+              1.285,50</strong>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="step-item">
+          <div class="step-header">
+            <div class="step-title">
+              <span class="step-number">6</span> Vagas restantes
+            </div>
+            <span class="badge-status">Implementado</span>
+          </div>
+          <p class="step-desc">Quantidade de vagas disponíveis para novos empréstimos.</p>
+          <div class="result-box">
+            Vagas restantes: <br><strong style="font-size: 16px; color: var(--blue-primary);">35 vagas</strong>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- RODAPÉ IGUAL À FOTO -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>BiblioMais</h3>
+        <p style="font-size: 12px; opacity: 0.7; margin-top: 8px;">Incentivando a leitura e o conhecimento através de
+          empréstimos acessíveis e gestão inteligente.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="/html/inicio.html">Início</a></li>
+          <li><a href="/site dda bliblioteca/html/catalogo.html">Catálogo</a></li>
+          <li><a href="/site dda bliblioteca/html/emprestimos.html">Empréstimos</a></li>
+          <li><a href="/site dda bliblioteca/html/sobre.html">Sobre</a></li>
+          <li><a href="/site dda bliblioteca/html/contato.html">Contato</a></li>
+          <li><a href="/site dda bliblioteca/html/exercicios.html">Exercícios</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Ajuda</h4>
+        <ul>
+          <li><a href="#">Perguntas frequentes</a></li>
+          <li><a href="#">Como funciona</a></li>
+          <li><a href="#">Regras da biblioteca</a></li>
+          <li><a href="#">Política de privacidade</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul style="font-size: 12px; opacity: 0.8;">
+          <li>(11) 99999-9999</li>
+          <li>contato@bibliomais.com.br</li>
+          <li>Rua das Letras, 123 - Centro - São Paulo/SP</li>
+          <li>Segunda a Sexta: 8h às 18h</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © 2025 BiblioMais – Todos os direitos reservados.
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+
+</html>

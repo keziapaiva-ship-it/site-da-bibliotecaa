@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BiblioMais - Biblioteca de Empréstimo</title>
+
+    <!-- Fonte Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Arquivo CSS Externo -->
+    <link rel="stylesheet" href="/css/inicio.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <!-- HERO SECTION -->
+    <header class="hero-container">
+        <div class="hero-bg-overlay"></div>
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="brand">
+                <div class="brand-icon">
+                    <i data-lucide="book-open" size="24"></i>
+                </div>
+                <div class="brand-text">
+                    <h1>BiblioMais</h1>
+                    <span>Biblioteca de Empréstimo</span>
+                </div>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="/html/inicio.html" class="active">Início</a></li>
+                <li><a href="/html/catalogo.html">Catálogo</a></li>
+                <li><a href="/html/exercicios.html">Exercícios</a></li>
+                <li><a href="/html/emprestimos.html">Empréstimos</a></li>
+                <li><a href="/html/sobre.html">Sobre</a></li>
+                <li><a href="/html/contato.html">Contato</a></li>
+            </ul>
+
+            <div class="auth-buttons">
+                <button class="btn-login"><i data-lucide="user" size="16"></i> Entrar</button>
+                <button class="btn-register"><i data-lucide="user-plus" size="16"></i> Cadastrar</button>
+            </div>
+        </nav>
+
+        <!-- Conteúdo Hero -->
+        <div class="hero-content">
+            <div class="hero-left">
+                <h2 class="hero-title">Encontre histórias,<br>viva experiências.</h2>
+                <p class="hero-subtitle">Pegue emprestado, leia e devolva.<br>Simples assim!</p>
+
+                <!-- BARRA DE BUSCA -->
+                <form id="search-form" class="search-box" action="/html/catalogo.html" method="GET">
+                    <input type="text" id="search-input" name="q"
+                        placeholder="Pesquisar livros, autores ou categorias...">
+                    <button type="submit" id="btnPesquisar">
+                        <i class="fas fa-search"></i> <!-- Ou substitua por texto "Buscar" se não usar FontAwesome -->
+                    </button>
+                </form>
+
+                <!-- TAGS MAIS BUSCADOS -->
+                <div class="popular-tags">
+                    <span class="label">Mais buscados:</span>
+                    <a href="#" class="tag-link">Romance</a>
+                    <a href="#" class="tag-link">Ficção</a>
+                    <a href="#" class="tag-link">Aventura</a>
+                    <a href="#" class="tag-link">Biografia</a>
+                    <a href="#" class="tag-link">Terror</a>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <div class="speech-bubble-wrapper">
+                    <div class="icon-circle-large">
+                        <i data-lucide="book-open-check" size="40" color="white"></i>
+                    </div>
+                    <div class="speech-card">
+                        <p>Conhecimento que se compartilha, histórias que ficam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- FEATURES SECTION -->
+    <section class="features-section">
+        <div class="features-grid">
+            <div class="feature-item">
+                <div class="feature-icon"><i data-lucide="book-open" size="22"></i></div>
+                <div class="feature-text">
+                    <h4>Catálogo completo</h4>
+                    <p>Milhares de títulos disponíveis para você explorar.</p>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon"><i data-lucide="calendar" size="22"></i></div>
+                <div class="feature-text">
+                    <h4>Empréstimo fácil</h4>
+                    <p>Faça empréstimos de forma rápida e prática online.</p>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon"><i data-lucide="clock" size="22"></i></div>
+                <div class="feature-text">
+                    <h4>Prazos flexíveis</h4>
+                    <p>Mais tempo para você ler o que realmente importa.</p>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon"><i data-lucide="users" size="22"></i></div>
+                <div class="feature-text">
+                    <h4>Para todos</h4>
+                    <p>Um espaço de leitura acessível para toda a comunidade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIVROS EM DESTAQUE -->
+    <main class="books-section">
+        <div class="section-header">
+            <h3 class="section-title">Livros em destaque</h3>
+            <button class="btn-view-all">Ver catálogo completo <i data-lucide="arrow-right" size="14"></i></button>
+        </div>
+
+        <div class="carousel-wrapper">
+            <button class="nav-arrow left"><i data-lucide="chevron-left" size="20"></i></button>
+
+            <div class="books-grid">
+                <!-- Livro 1 -->
+                <div class="book-card">
+                    <img class="book-cover"
+                        src="https://th.bing.com/th/id/OIP.lALRF4Pupj1pCxoEE-l4MgHaKi?w=182&h=260&c=7&r=0&o=7&pid=1.7&rm=3"
+                        alt="O Pequeno Príncipe">
+                    <div class="book-info">
+                        <h4 class="book-title">O Pequeno Príncipe</h4>
+                        <span class="book-author">Antoine de Saint-Exupéry</span>
+                        <div class="book-tag-wrapper">
+                            <span class="book-tag">Infantil</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Livro 2 -->
+                <div class="book-card">
+                    <img class="book-cover"
+                        src="https://th.bing.com/th/id/OIP.yVnweYto8t79xJLfZqyYtQAAAA?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="1984">
+                    <div class="book-info">
+                        <h4 class="book-title">1984</h4>
+                        <span class="book-author">George Orwell</span>
+                        <div class="book-tag-wrapper">
+                            <span class="book-tag">Ficção</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Livro 3 -->
+                <div class="book-card">
+                    <img class="book-cover"
+                        src="https://th.bing.com/th/id/OIP.pfNw4XfiwaRMLPMZa_cszQHaKV?w=182&h=254&c=7&r=0&o=7&pid=1.7&rm=3"
+                        alt="Dom Casmurro">
+                    <div class="book-info">
+                        <h4 class="book-title">Dom Casmurro</h4>
+                        <span class="book-author">Machado de Assis</span>
+                        <div class="book-tag-wrapper">
+                            <span class="book-tag">Clássico</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Livro 4 -->
+                <div class="book-card">
+                    <img class="book-cover"
+                        src="https://th.bing.com/th/id/OIP.26kGlRn5pFOh3lnYIuuxBgHaKp?w=124&h=180&c=7&r=0&o=7&pid=1.7&rm=3"
+                        alt="A Menina que Roubava Livros">
+                    <div class="book-info">
+                        <h4 class="book-title">A Menina que Roubava Livros</h4>
+                        <span class="book-author">Markus Zusak</span>
+                        <div class="book-tag-wrapper">
+                            <span class="book-tag">Drama</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Livro 5 -->
+                <div class="book-card">
+                    <img class="book-cover"
+                        src="https://m.media-amazon.com/images/I/71yE-c9k1BL._AC_UF1000,1000_QL80_.jpg"
+                        alt="A Culpa é das Estrelas">
+                    <div class="book-info">
+                        <h4 class="book-title">A Culpa é das Estrelas</h4>
+                        <span class="book-author">John Green</span>
+                        <div class="book-tag-wrapper">
+                            <span class="book-tag">Romance</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Livro 6 -->
+                <div class="book-card">
+                    <img class="book-cover"
+                        src="https://m.media-amazon.com/images/I/91M9xPfd10L._AC_UF1000,1000_QL80_.jpg" alt="O Hobbit">
+                    <div class="book-info">
+                        <h4 class="book-title">O Hobbit</h4>
+                        <span class="book-author">J.R.R. Tolkien</span>
+                        <div class="book-tag-wrapper">
+                            <span class="book-tag">Aventura</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="nav-arrow right"><i data-lucide="chevron-right" size="20"></i></button>
+        </div>
+    </main>
+
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="/java scritp/inicio.js"></script>
+</body>
+
+</html>
